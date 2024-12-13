@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# Mentee TODO App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio corresponde a un proyecto de prueba el cual tiene como objetivo ser un laboratorio para diferentes implementaciones básicas durante el proceso de Mentee en Pragma.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
+
+- ReactJS
+- ViteJS
+- TypeScript
+
+### Librerías adicionales
+
+- Redux Toolkit
+- ContextAPI (Suministrada por ReactJS)
+
+### Documentación adicional ViteJS
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Estructura de carpetas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+El proyecto implementa una estructura sencilla de carpetas y hace uso de atomic design para la organización de los componentes utilizados dentro del proyecto
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+.
+|-- src/                              # Carpeta Source
+|   |-- components/                   # Carpeta de componentes
+|   |    |-- atoms/                   # Átomos
+|   |    |   └── component-file.tsx   # Ejemplo de componente atómico
+|   |    └-- molecules/               # Carpeta de componentes
+|   |        └── component-file.tsx   # Ejemplo de componente molecular
+|   └-- hooks/                        # Carpeta de hooks
+|            └── hook-file.ts         # Ejemplo de archivo de hooks
+|-- store/                            # Carpeta de Store de Redux
+|   └─- slices/                       # Carpeta de Slices para Redux
+|-- README.md                         # Readme del sitio
+|-- index.html                        # Index html del sitio
+└── .gitignore                        # gitignore del sitio
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Variables de entorno
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Para la versión actual del proyecto, no se cuenta con variables de entorno.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## ¿Cómo ejecutar el proyecto?
+
+1. Clona el repositorio en tu repositorio local
+
+```
+git clone https://github.com/mperezs06408/mentee_todo_app
+```
+
+2. Instala las dependencias del proyecto
+
+```
+npm i
+```
+
+3. Corre el proyecto en entorno de desarrollo en el puerto 3000.
+
+```
+npm run dev
 ```
