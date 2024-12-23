@@ -1,9 +1,9 @@
 export const Counter = () => {
   return (
-    <div>
+    <div data-testid="component">
       <p>1</p>
-      <button>+</button>
-      <button>-</button>
+      <button data-testid="button1">+</button>
+      <button data-testid="button2">-</button>
     </div>
   );
 };

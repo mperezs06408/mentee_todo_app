@@ -6,6 +6,10 @@
   ],
   "compilerOptions": {
     "baseUrl": "./",
+    "jsx": "react-jsx", // Configura JSX para React
+    "target": "esnext", // Define el objetivo de JavaScript
+    "module": "esnext",
+    "moduleResolution": "node",
     "paths": {
       "@/*": ["./src/*"]
     }
