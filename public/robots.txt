@@ -1,0 +1,15 @@
+# Archivo robots.txt sencillo para una aplicación Vite
+
+# Permitir el acceso completo a todos los rastreadores
+User-agent: *
+Allow: /
+
+# Bloquear acceso a una carpeta específica (si hubiera)
+# Esto es un ejemplo de cómo puedes bloquear ciertas rutas
+Disallow: /private/
+
+# Bloquear un archivo específico (si tienes archivos sensibles)
+Disallow: /secret-data.json
+
+# Indicar la ubicación del sitemap
+Sitemap: http://localhost:3000/sitemap.xml

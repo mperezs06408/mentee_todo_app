@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal -->
+  <url>
+    <loc>http://localhost:3000/</loc>
+    <lastmod>2024-12-20</lastmod> <!-- Fecha de última modificación -->
+    <changefreq>daily</changefreq> <!-- Frecuencia de cambios estimada -->
+    <priority>1.0</priority> <!-- Prioridad alta ya que es la página principal -->
+  </url>
+
+  <!-- Otra URL del sitio (si hubiera otras páginas estáticas) -->
+  <url>
+    <loc>http://localhost:3000/about</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority> <!-- Prioridad menor que la home -->
+  </url>
+
+    <url>
+    <loc>http://localhost:3000/about/foundations</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority> <!-- Prioridad menor que la home -->
+  </url>
+<url>
+    <loc>http://localhost:3000/about/sitemap.xml</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority> <!-- Prioridad menor que la home -->
+  </url>
+
+  <!-- Secciones adicionales (puedes agregar más si tienes otras páginas) -->
+  <url>
+    <loc>http://localhost:3000/contact</loc>
+    <lastmod>2024-12-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority> <!-- Menor importancia que las otras dos -->
+  </url>
+
+</urlset>
